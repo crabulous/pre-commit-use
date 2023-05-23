@@ -1,0 +1,32 @@
+repos:
+
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/PyCQA/pylint
+    rev: v3.0.0a6
+    hooks:
+      - id: pylint
+
+  - repo: local
+    hooks:
+      - id: pytest-check-id
+        name: pytest-check-name
+        stages: [ commit ]
+        types: [ python ]
+        entry: pytest
+        language: system
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.3.0
+    hooks:
+      - id: mypy
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+    - id: flake8
+    additional_dependencies:
+      - flake8-bugbear
