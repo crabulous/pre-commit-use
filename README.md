@@ -1,5 +1,5 @@
 # pre-commit-usage
-0) `pip install pytest`
+0) `pip install pytest`, 
    `pip install pre-commit`
 1) Состыковать проект с GitHub (создать новый репозиторий или взять имеющийся)
 	`git init`, `git add FILES`
