@@ -1,4 +1,4 @@
-# pre-commit-use
+# pre-commit-usage
 
 1) Состыковать проект с GitHub (создать новый репозиторий или взять имеющийся)
 	`git init`, `git add FILES`
